@@ -20,19 +20,32 @@ let seekCircle = document.querySelector(".seek-box")
 // Fetch songs from folder with async/await + error handling
 async function getSongs(folder) {
   try {
-    songUL.innerHTML = "<li>Loading...</li>";
-    const res = await fetch(`songs/${folder}`);
-    const data = await res.text();
-    const div = document.createElement("div");
-    div.innerHTML = data;
-    return Array.from(div.getElementsByTagName("a"))
-      .filter(a => a.href.endsWith(".m4a")).map(a => a.href);
+    songUL.innerHTML = "<li>Loading...</li>"; // show loading status
+
+    const res = await fetch("songs.json"); // adjust path if needed
+    const data = await res.json();
+
+    if (!data[folder]) {
+      throw new Error("Folder not found");
+    }
+
+    // Songs are now full paths like "songs/funk/track.m4a"
+    const fetchedSongs = data[folder];
+
+    if (fetchedSongs.length === 0) {
+      songUL.innerHTML = "<li>No songs found in this album.</li>";
+      return [];
+    }
+
+    return fetchedSongs;
+
   } catch (error) {
     console.error("Failed to fetch songs:", error);
     songUL.innerHTML = "<li>Failed to load songs. Please try again.</li>";
     return [];
   }
 }
+
 // loading song into album
 function renderSongs(songs) {
   songUL.innerHTML = "";
