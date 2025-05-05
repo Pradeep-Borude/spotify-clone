@@ -21,7 +21,7 @@ let seekCircle = document.querySelector(".seek-box")
 async function getSongs(folder) {
   try {
     songUL.innerHTML = "<li>Loading...</li>";
-    const res = await fetch(`http://127.0.0.1:3000/songs/${folder}`);
+    const res = await fetch(`https://github.com/Pradeep-Borude/spotify-clone/tree/main/songs/${folder}`);
     const data = await res.text();
     const div = document.createElement("div");
     div.innerHTML = data;
