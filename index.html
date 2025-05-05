@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify</title>
+  <link rel="icon" href="svgs/favicon.svg" type="image/png" />  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <!-- navbar starting -->
+  <div class="navbar flex space-between m8">
+    <div class="nav-left flex">
+      <img class="logo invert" src="svgs/logo.svg" alt="">
+      <img class="home invert" src="svgs/home.svg" alt="">
+      <div class="search-box">
+        <img class="search invert " src="svgs/search.svg" alt="">
+        <input type="text" placeholder="What do you want to play?">
+        <div class="divider"></div>
+        <img class="browse invert" src="svgs/browse.svg" alt="">
+      </div>
+    </div>
+    <div class="nav-right flex">
+      <a href="https://www.spotify.com/in-en/premium/">Premium</a>
+      <a href="https://support.spotify.com/in-en/">Support</a>
+      <a href="https://www.spotify.com/in-en/download/windows/">Download</a>
+      <div class="divider"></div>
+      <a href="https://open.spotify.com/download"> Install App</a>
+      <a href="https://www.spotify.com/in-en/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F">Sign up</a>
+      <a class="login-btn" href="https://accounts.spotify.com/login?continue=https%3A%2F%2Fopen.spotify.com%2F">log in</a>
+    </div>
+    <div class="more">
+      <img class="invert" src="svgs/list.svg" alt="">
+    </div>
+  </div>
+  <!-- navbar completed -->
+  <!-- main body -->
+  <main class="flex">
+    <div class="body-left m8">
+      <!-- left side(your library) -->
+      <div class="library flex space-between p16">
+        <span>
+          <h2>your library</h2>
+        </span>
+        <span><h2>+</h2></span>
+      </div>
+      <div class="mid-lib">
+        <div class="create-playlist ">
+          <h3><b>Create your first playlist</b></h3>
+          <h4><b>It's easy, I'll help you</b></h4>
+          <a class="create-playlist-btn" href=""><b>create playlist</b></a>
+        </div>
+        <div class="create-playlist ">
+          <h3><b>Let's find some podcast to follow</b></h3>
+          <h4><b>We'll keep you updated on new episodes</b></h4>
+          <a class="create-playlist-btn" href="https://open.spotify.com/genre/podcasts-web"><b>Browse podcasts</b></a>
+        </div>
+      </div>
+      <div class="end-lib documentation">
+        <a href="https://www.spotify.com/in-en/legal/end-user-agreement/">legal</a>
+        <a href="https://www.spotify.com/us/safetyandprivacy">Safty & Privacy center</a>
+        <a href="https://www.spotify.com/us/legal/privacy-policy/">privacy policy</a>
+        <a href="https://www.spotify.com/us/legal/cookies-policy/">Cookies</a>
+        <a href="https://www.spotify.com/us/legal/privacy-policy/#s3">About Ads</a>
+        <a href="https://www.spotify.com/us/accessibility">Accessibility</a>
+        <a href="https://www.spotify.com/us/legal/notice-at-collection/">Notice at collection</a>
+      </div>
+      <span class="lang-btn">
+        <img class="invert" src="svgs/lang.svg" alt="">
+        <b>English</b></span>
+    </div><!-- left side completed -->
+    <!-- right side body -->
+    <div class="body-right">
+      <div class="premium">
+        <h1>Get Premium</h1>
+        <div class="close-premium">
+          <img src="svgs/close.svg" alt="">
+        </div>
+        <p>Take control of your listening with ad-free music.cancel anytime.</p>
+        <div class="get-premium">get-premium</div>
+      </div>
+      <div class="albums">
+        <h1><b>Popular Albums</b></h1>
+        <div class="card-container flex">  <!--cards  -->
+          <div data-folder="sambata" class="card1 card">
+            <div class="thumbnil">
+              <img class="img" src="images/card_image1.jpg" alt="">
+            </div>
+            <div class="card-info">
+              <h3>GANGSTER SHIT</h3>
+              <h6>SAMBATA__00<img src="svgs/official-logo.svg" alt=""> </h6>
+            </div>
+            <div id="play-btn" class="play-btn">
+              <img src="svgs/play-btn.svg" alt="">
+            </div>
+          </div>
+          <div data-folder="ncs" class="card2 card">
+            <div class="thumbnil">
+              <img class="img" src="images/card_image2.jpg" alt="">
+            </div>
+            <div class="card-info">
+              <h3>PAL PAL </h3><h6>AFUSIC<img src="svgs/official-logo.svg" alt=""></h6>
+            </div>
+            <div class="play-btn">
+              <img src="svgs/play-btn.svg" alt="">
+            </div>
+          </div>
+          <div data-folder="rockson" class="card3 card">
+            <div class="thumbnil">
+              <img class="img" src="images/card_image3.jpg" alt=" ">
+            </div>
+            <div class="card-info">
+              <h3>MAHAAN</h3>
+              <h6>BY ROCKSON
+                <img src="svgs/official-logo.svg" alt="">
+
+              </h6>
+            </div>
+            <div class="play-btn">
+              <img src="svgs/play-btn.svg" alt="">
+            </div>
+          </div>
+         
+          <div data-folder="funk" class="card4 card">
+            <div class="thumbnil">
+              <img class="img" src="images/card_image4.jpg" alt=" ">
+            </div>
+            <div class="card-info">
+              <h3>MATUSHKA「AMV」</h3>
+              <h6>Anime mix ᴴᴰ</h6>
+            </div>
+            <div class="play-btn">
+              <img src="svgs/play-btn.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="expanded-card ">
+        <div class="bg-blur"></div>
+        <img class="img songlist-img" src="" alt=" ">
+        <div class="close-album invert">
+          <img src="svgs/close.svg" alt="">
+        </div>
+        <div class="pop-up disable">
+          <div class="card-expand flex"> 
+            <div class="thumbnil">
+              <img class="img songlist-img" src="" alt="">
+            </div>   
+            <div class="expandedcard-info">
+              <h3 class="">Card Name</h3>
+              <h6 class="author">Author Name</h6>
+            </div>
+            <!-- <div class="play-album-btn"> -->
+                <img class="play-album-btn" src="svgs/play-album.svg" alt="">
+            <!-- </div> -->
+          </div>
+          <div class="songs">
+            <ul class="song-list "></ul>
+          </div>
+        </div>
+      </div> 
+     </div>
+    </div>
+    <div class="sidebar">
+      <div class="close-sidebar">
+        <img class="invert close-sidebar" src="svgs/close.svg" alt="close svg">
+      </div>
+      <div class="registration">
+        <a href="">sign up</a>
+        <a href="">log in</a>
+      </div>
+      <div class="separator">-</div>
+      <div class="about">
+        <a href="">premium</a>
+        <a href="">Help</a>
+        <a href="">Download</a>
+        <a href="">Privacy</a>
+        <a href="">Terms</a>
+      </div>
+    </div>
+  </main>
+  <!-- footer (music player) -->
+   <div class="loader">
+
+     
+     <div class="song-name-box ">
+       <div class="song-name"></div>
+      </div>
+      <div class="mid-footer ">
+        <div class="slider flex">
+          <span class="curr-time">--:--</span>
+          <div class="seek-line flex">
+            <div class="seek-box "></div>
+          </div>
+          <span class="duration">--:--</span>
+        </div>
+        <div class="buttons flex">
+          <img src="svgs/prev.svg" alt="" class="prev">
+          <img src="svgs/play.svg" alt="" class="play">
+          <img src="svgs/next.svg" alt="" class="next">
+          <audio id="player" controls style="display: none;"></audio>
+        </div>
+      </div>
+      <div class="volume flex">
+        <div class="mute">
+          <img src="svgs/unmute.svg" alt="" class="muteUnmute">
+        </div>
+        <div class="dec-vol"><img src="svgs/minus.svg" alt=""></div>
+        <div class="vol-per">100%</div>
+        <div class="inc-vol"><img src="svgs/plus.svg" alt=""></div>
+      </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
+

@@ -1,0 +1,135 @@
+@media (max-width: 1023px) {
+
+  /* making navbar responsive */
+  body {
+    padding: 30px 8px 8px 8px;
+  }
+.albums>h1{
+  margin: 20px 50px;
+  font-size: 50px;
+}
+  .nav-right,.home {
+    display: none;
+  }
+
+  .nav-left {
+    width: 90%;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .search-box {
+    width: 75vw;
+    height: 100px;
+  }
+
+  .search-box img {
+    height: 70px;
+    margin: 0 20px;
+  }
+
+  .search-box input {
+    font-size: 35px;
+  }
+
+  .more {
+    display: block;
+    margin: 0 20px 0 0;
+    align-content: center;
+  }
+
+  .more img {
+    width: 60px;
+    align-content: center;
+    display: block;
+  }
+
+  /* navbar completed */
+  /* main body */
+  .body-left {
+    display: none;
+  }
+  
+/* .sidebar{
+
+} */
+  .body-right {
+    height: 100%;
+    width: 99%;
+    border-radius: 50px;
+  }
+
+  .premium {
+    display: grid;
+  }
+  .card-container{
+    height: 84%;
+    justify-content: center;
+  }
+  .card{
+    height: 500px;
+    width: 350px;
+  }
+.thumbnil{
+  width: 330px;
+  height: 375px;
+border-radius: 10px;
+}
+/* expanding card size */
+.invoke-expanded-card {
+  height: 100.5%;
+  bottom: -10px;
+}
+.play-album-btn{
+position: absolute;
+right: 70px;
+bottom: 170px;
+}
+.bg-blur{
+  height: 102%;
+  backdrop-filter: blur(18px);
+}
+.pop-up{
+  top: 0;
+}
+  .play-btn {
+    right: 50px;
+  }
+
+  .play-btn>img {
+    height: 100px;
+  }
+
+  .card:hover .play-btn {
+    bottom: 170px;
+  }
+  /* track elements */
+  .loader{
+    display: grid;
+        justify-items: center;
+        align-content: space-evenly;
+    }
+.song-name-box{
+  height: 50px;
+  width: 400px;
+  background-color: transparent;
+}
+.song-name{
+  animation: none;
+  font-size: xx-large;
+}
+.volume{
+  display: none;
+}
+
+.duration,.curr-time{
+  font-size: 32px;
+}
+.seek-line{
+  width: 60vw;
+  height: 7px;
+}
+
+}
